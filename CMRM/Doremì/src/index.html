@@ -1,0 +1,91 @@
+
+
+<button onclick="choose_level(1)" class="levels one">level 1</button>
+<button onclick="choose_level(2)" class="levels two">level 2</button>
+<button onclick="choose_level(3)" class="levels three">level 3</button>
+<button onclick="choose_level(4)" class="levels four">level 4</button>
+<button onclick="choose_level(5)" class="levels five">level 5</button>
+<button onclick="choose_level(6)" class="levels six">level 6</button>
+<button onclick="choose_level(7)" class="levels seven">level 7</button>
+<button onclick="avanti()" id="next">Next</button>
+<div id="schermata_vittoria">You rock! They love your music! You're ready to take it to another level!</div>
+<div id="schermata_sconfitta">Give it another chance, you will do better!</div>
+<p id="schermata_descrizione1">Doremí is a young man very fond of music and his greatest desire is to discover all the secrets on the melodies and compose the perfect one, capable of conquering everyone's heart and mind!
+<br>In this level Doremí will learn the concepts behind the composition of a melody from his mentor Aulos, and will have to practice creating a first-rate counterpoint melody by repeating the notes of the main melody.</p>
+<p id="schermata_descrizione2">Doremí is lively and revolutionary, she wants to transmit strength and courage through her music and travels to the planet Mars to expand her knowledge!<br>In this level, Doremí faces an audience outside his planet for the first time, but the energy of youth helps him overcome his fears. It seems that for Doremí the task is easy: the inhabitants of this planet particularly love energetic music. Doremí will have to use the right combination of notes to attract new audiences! Use the Misolidio mode!
+</p>
+<p id="schermata_descrizione3">Doremí discovered a strong curiosity after leaving home and reflects a lot on the experiences just made. His music reflects his introspective mood and continues his journey in search of the perfect melody. Doremí is convinced that music helps to know himself!<br>In this level Doremí will have to make his audience travel with his notes, the ability to enter people's minds is something that fascinates Doremí! Use the Doric modal scale, they say it is the most suitable to create this atmosphere!
+</p>
+<p id="schermata_descrizione4">Doremí wants to get out of his comfort zone, he feels ready to explore the most remote places of the solar system and music. Aware of his skills, he continues his journey to discover the limits of harmony and melody<br>In this level our protagonist wants to go beyond the surface of the concepts and principles learned so far on the melodies. He hopes to be able to fill this thirst for knowledge about Pluto, a planet famous for the strangeness of its music and for the sense of suspension generated. To impress this population, use the Locrio mode!</p>
+<p id="schermata_descrizione5">Doremí soon realizes that he doesn't want to make his music too intricate and difficult to understand, so he seeks the balance between all the things learned in his path. His journey takes him to Saturn where he will have to acquire an overall look at the composition!<br>In this level Doremí will deal with his composition in several aspects, he wants to apply the principles learned on the melodies and also deal with the percussion, which he considers an important part to complete his music. To pass the level create a first or second kind of counterpoint melody on the main one and follow the indicated rhythmic pattern, now the percussions are in your hands! For melody use Phrygian mode!</p>
+<p id="schermata_descrizione6">It has been a long time since Doremí left the planet earth and now that he is on the moon he feels the memories of his youth very close. He has learned a lot but would like to get closer to that innate desire to communicate something through music!<br>In this level Doremí will have to create different sections for his songs, a single melody cannot transmit a complete message, for this the B-sections are needed! To pass the level, create a third kind of counterpoint voice and follow the backing track every time it changes its structure!</p>
+<p id="schermata_descrizione7">Doremí reaches the last planet, Jupiter. He feels full of knowledge and understands that the time has come to pass on his message, he wants to become the best teacher!<br>In this level Doremí will have to demonstrate all the skills he has learned on his journey and teach them to his disciples. To pass the level he will have to create a second or third kind of counterpoint voice adapting to the changes of the backing track. He will also have to test what he has learned about percussion and follow the indicated pattern!</p>
+<button onclick="restart_game()" class="buttons retry">Home</button>
+<button onclick="setTimeout(start_tempo,1200)" class="buttons beat">Play!</button>
+<button onclick="start_tempo()" class="buttons beat" style="top: 300px">Stop!</button>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<div class="tempo metro" ></div>
+<h1 id="punteggio">Points: 500</h1>
+<h1 id="livello" align="left">Level: 1</h1>
+<div id="container">
+  <div class="obstacle obstaclep object" style= "left:350px"></div>
+  <div class="drums played" style= "left:360px"></div>
+  <div class="obstacle obstaclep object" style= "left:510px"></div>
+  <div class="drums played" style= "left:520px"></div>
+  <div class="obstacle obstaclep object" style= "left:160px"></div>
+  <div class="drums played" style= "left:150px"></div>
+  <div class="obstacle obstaclep object" style= "left:575px"></div>
+  <div class="drums played" style= "left:585px"></div>
+  <div class="obstacle obstaclep object" style= "left:140px"></div>
+  <div class="drums played" style= "left:135px"></div>
+  <div class="obstacle obstaclep object" style="left:560px"></div>
+  <div class="drums played" style="left:570px"></div>
+  <div class="obstacle obstaclep object"style="left:180px"></div>
+  <div class="drums played" style="left:170px"></div>
+  <div class="obstacle obstaclep object"style="left:280px"></div>
+  <div class="drums played" style="left:270px"></div>
+    </div>
+<div id="container2"></div>
+  <h1 class="separatore" style="visibility: hidden;">_______</h1>
+  <h1 class="separatore" >_______</h1>
+  <h1 class="separatore" style=" visibility: hidden;">_______</h1>
+  <h1 class="separatore">_______</h1>
+  <h1 class="separatore" style="visibility: hidden;">_______</h1>
+  <h1 class="separatore">_______</h1>
+  <h1 class="separatore" style="visibility: hidden;">_______</h1>
+<div id="container3"></div>
+  <h1 class="separatore2">_______</h1>
+  <h1 class="separatore2" >_______</h1>
+  <h1 class="separatore2">_______</h1>
+  <h1 class="separatore2">_______</h1>
+  <h1 class="separatore2">_______</h1>
+  <h1 class="separatore2">_______</h1>
+  <h1 class="separatore2">_______</h1>
+<div id="container_drum"></div>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+  <h1 class="separatore3">___</h1>
+<div id="schermata_inizio">Doremì</div>
+<div id="win">
+  <h1 id="punteggio"></h1>
+ </div>
+<button onclick="next_level(level)" id = "nextlevel">Next level</button>
+<button onclick="try_again()" id = "try_again">Retry!</button>

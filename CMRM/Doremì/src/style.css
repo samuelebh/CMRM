@@ -1,0 +1,473 @@
+body {
+  background: indigo;
+  position: relative;
+  top: -5px;
+  margin: 0px;
+}
+
+#container {
+  background-size: 100%;
+  position: absolute;
+  top: 50px;
+  left: 690px;
+  transform: translate(-50%);
+  right: 80px;
+  width: 750px;
+  height: 550px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+#container2 {
+  background: darkslateblue;
+  position: absolute;
+  top: 50px;
+  left: 245px;
+  transform: translate(-50%);
+  right: 80px;
+  width: 120px;
+  height: 550px;
+  border: 2px solid black;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px  black;
+}
+
+#container3 {
+  background: darkslateblue;
+  position: absolute;
+  top: 50px;
+  left: 379px;
+  transform: translate(-50%);
+  right: 80px;
+  width: 120px;
+  height: 550px;
+  border: 2px solid black;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px  black;
+  visibility: hidden;
+}
+
+#container_drum {
+  background: darkslateblue;
+  position: absolute;
+  top: 50px;
+  left: 317px;
+  right: 80px;
+  width: 50px;
+  height: 550px;
+  border: 2px solid black;
+  border-radius: 7px;
+  text-align: center;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px  black;
+  visibility: hidden;
+}
+
+.obstacle {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/prova1-ad8ce.appspot.com/o/nota.jpg?alt=media&token=0007c920-1341-48f2-84c7-fbd962dab784");
+  background-size: 98%;
+  width: 30px;
+  height: 30px;
+  border: 3px solid limegreen;
+  border-radius: 50%;
+  position: relative;
+  top: 55px;
+  margin: 0px;
+}
+
+.obstaclep {
+  border: 3px solid black;
+}
+
+#punteggio {
+  position: absolute;
+  top: 0px;
+  margin: 0px;
+  right: 30px;
+  width: 180px;
+}
+
+
+h2 {
+  color: white;
+  font-family: "Helvetica Light";
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  font-size: 20px;
+}
+
+h1 {
+  color: white;
+  font-family: "Segoe Script";
+  position: absolute;
+  width: 2000px;
+  top: 20px;
+  right: 10px;
+  text-shadow: 3px 3px  black;
+  font-size: 27px;
+}
+
+#livello {
+  left: 15px;
+  width: 500px;
+  top: 0px;
+  margin: 0px;
+}
+
+.tempo {
+  position: relative;
+  left: 11%;
+  top: 48px;
+  width: 5px;
+  height: 30px;
+  margin: 3px;
+  background: red;
+  border: 1px solid black;
+  color: white;
+  font-family: "calibri";
+  font-size: 30px;
+  text-align: center;
+  display: block;
+}
+
+.metro {
+ background: green;
+}
+
+#schermata_inizio {
+  
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/prova1-ad8ce.appspot.com/o/prima%20pagina.png?alt=media&token=66df06a0-979e-4d88-9c53-801134b2e18b");
+  background-position: 50% 0%; 
+  background-repeat: no-repeat;
+  background-size: 870px;
+  background-color: indigo;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right:0px;
+  z-index: 1;
+  visibility: visible;
+  color: darkorange;
+  text-align: center;
+  font-family: "Segoe Script";
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 3px 3px  lightgoldenrodyellow;
+}
+
+.levels {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 40px;
+  width: 210px;
+  font-weight: bold;
+  z-index: 2;
+  visibility: visible;
+}
+
+.one {
+  position: absolute;
+  top: 160px;
+}
+
+.two {
+  position: absolute;
+  top: 220px;
+}
+
+.three {
+  position: absolute;
+  top: 280px;
+}
+
+.four {
+  position: absolute;
+  top: 340px;
+}
+
+.five {
+  position: absolute;
+  top: 405px;
+}
+
+.six {
+  position: absolute;
+  top: 470px;
+}
+
+.seven {
+  position: absolute;
+  top: 535px;
+}
+
+.buttons {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+}
+
+button {
+  font-family: "Lucida Console";
+  color: darkviolet;
+  font-size: 16px;
+  border-radius: 30px;
+  border-color: sandybrown;
+  background-color: sandybrown;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+  background: darkorange;
+}
+
+.beat {
+  position: absolute;
+  top: 220px;
+  right: 110px;
+}
+
+.retry {
+  position: absolute;
+  top: 370px;
+  right: 110px;
+}
+
+.drums {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: relative;
+  top: 55px;
+  margin: 0px;
+  background: white;
+  visibility: hidden;
+}
+
+.played {
+  border: 2px solid black;
+}
+
+#descrizione {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+}
+
+#win{
+  background: orange;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40%;
+  top: 60%;
+  left: 0px;
+  z-index: 0;
+  border: 15px dotted gold;
+  font-family: "Segoe Script";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: brown;
+  visibility: hidden;
+}
+
+#nextlevel {
+  position: absolute;
+  visibility: hidden;
+  height: 50px;
+  width: 200px;
+  top: 150px;
+  font-weight: bold;
+
+}
+
+#schermata_descrizione1 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione2 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione3 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione4 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione5 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione6 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#schermata_descrizione7 {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+  top: 200px;
+  left: 30px;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+}
+
+#next {
+  position: absolute;
+  top: 500px;
+  left: 600px;
+  width: 100px;
+  height: 50px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#schermata_vittoria {
+  position: absolute;
+  visibility: hidden;
+  background-color: indigo;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  top: 300px;
+  width: 1000px;
+  height: 200px;
+  left: 170px;
+  z-index: 2;
+  border-radius: 30px;
+}
+
+#schermata_sconfitta {
+  position: absolute;
+  visibility: hidden;
+  background-color: indigo;
+  color: white;
+  font-family: "Segoe Script";
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 3px 3px  black;
+  text-align: center;
+  height: 200px;
+  width: 1000px;
+  top: 300px;
+  left: 170px;
+  z-index: 2;
+  border-radius: 30px;
+}
+
+#nextlevel {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+  height: 60px;
+  left: 600px;
+  z-index: 3;
+  font-weight: bold;
+}
+
+#try_again {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+  height: 60px;
+  left: 600px;
+  top: 400px;
+  z-index: 3;
+  font-weight: bold;
+}
+
+.separatore {
+  position: relative;
+  width: 200px;
+  top: -491px;
+  font-size: 30px;
+  left: 200px;
+  display: block;
+}
+
+.separatore2 {
+  position: relative;
+  width: 200px;
+  top: -974px;
+  font-size: 30px;
+  left: 335px;
+  visibility: hidden;
+  display: block;
+}
+
+.separatore3 {
+  position: relative;
+  width: 200px;
+  top: -1455px;
+  font-size: 30px;
+  left: 325px;
+  visibility: hidden;
+  display: block;
+}
